@@ -1,11 +1,12 @@
-const {Client} = require('pg')
-const db = new Client({
+const Pool = require('pg').Pool
+const db = new Pool({
     user: 'admin',
     host: 'localhost',
     database: 'user_db',
     password: 'c#h83D7m3KRg',
     port: 5433,
 })
+
 const getUsers = (request, response) => {
     db.query('SELECT * FROM users ORDER BY id ASC', (error, results) => {
         if (error) {
