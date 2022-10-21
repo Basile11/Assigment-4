@@ -5,8 +5,8 @@ post http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name": "Kevin",
-    "email": "kevin@example.com"
+    "name": "Tom",
+    "email": "tom@example.com"
 }
 
 ###
@@ -17,3 +17,6 @@ Content-Type: application/json
     "name": "Chris",
     "email": "Robinson"
 }
+
+###
+DELETE http://localhost:3000/users/5
