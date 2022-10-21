@@ -1,10 +1,12 @@
+require('dotenv').config({debug: true})
+
 const Pool = require('pg').Pool
 const db = new Pool({
-    user: 'admin',
-    host: 'localhost',
-    database: 'user_db',
-    password: 'c#h83D7m3KRg',
-    port: 5433,
+    user: process.env.DB_USER,
+    host: process.env.HOST,
+    database: process.env.DB,
+    password: process.env.DB_PWD,
+    port: process.env.PORT,
 })
 
 const getUsers = (request, response) => {
