@@ -5,17 +5,17 @@ post http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name": [ENTER NAME],
-    "email": [ENTER EMAIL]
+    "name": "Mary Rogers",
+    "email": "mary@example.com"
 }
 
 ###
-PUT http://localhost:3000/users/5
+PUT http://localhost:3000/users/3
 Content-Type: application/json
 
 {
-    "name": [ENTER NAME],
-    "email": [ENTER EMAIL]
+    "name": "David Smith",
+    "email": "david@example.com"
 }
 
 ###
