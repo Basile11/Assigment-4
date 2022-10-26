@@ -1,7 +1,7 @@
 {
   "name": "crud",
   "version": "1.0.0",
-  "description": "",
+  "description": "This lesson is taken from the [CRUD REST API] (https://www.atatus.com/blog/building-crud-rest-api-with-node-js-express-js-and-postgresql/) article.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,6 +13,15 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "knex": "^2.3.0",
     "pg": "^8.8.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathispappo/testons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mathispappo/testons/issues"
+  },
+  "homepage": "https://github.com/mathispappo/testons#readme"
 }

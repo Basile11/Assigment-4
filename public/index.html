@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Admin Interface</h1>
+            <div>
+            <input type="number" id="userId" placeholder="Enter your player's id"/>
+            <input id="userLastName" placeholder="Enter user last name"/>
+            <input id="userFirstName" placeholder="Enter user first name"/>
+            <input id="userAge" placeholder="Enter user age" />
+            <input id="userNumber" placeholder="Enter your number"/>
+            </div>
+            <div>
+            <select class="form-select" name="request" id="request" style="margin-top: 10%">
+                <option value="create">Create this player</option>
+                <option value="read">Look for this player</option>
+                <option value="update">Modify this player</option>
+                <option value="delete">Delete this player</option>
+            </select>
+            </div>
+            <button class="btn btn-primary btn-lg"
+            style="margin-bottom: 5%"
+            class="buttonClass"
+            id="fetchButton"
+            onclick="executeFunction()"
+            >
+            Go
+            </button>
+
+            </button>
+        </div>
+    </div>
+</div>
+  </body>
+</html>
